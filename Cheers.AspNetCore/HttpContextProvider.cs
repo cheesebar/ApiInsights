@@ -1,13 +1,10 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting.Internal;
+﻿using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Cheers.ApiInsights
+namespace Cheers.AspNetCore
 {
     public static class HttpContextProvider
     {
@@ -36,21 +33,6 @@ namespace Cheers.ApiInsights
         {
             _accessor = accessor;
             _serviceScopeFactory = serviceScopeFactory;
-        }
-    }
-    public static class HttpContextExtenstion
-    {
-        public static void AddHttpContextAccessor(this IServiceCollection services)
-        {
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-        }
-
-        public static IApplicationBuilder UseGlobalHttpContext(this IApplicationBuilder app)
-        {
-            var httpContextAccessor = app.ApplicationServices.GetRequiredService<IHttpContextAccessor>();
-            var serviceScopeFactory = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>();
-            HttpContextProvider.ConfigureAccessor(httpContextAccessor, serviceScopeFactory);
-            return app;
         }
     }
 }

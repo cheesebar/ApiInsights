@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cheers.ApiInsights", "Cheers.ApiInsights\Cheers.ApiInsights.csproj", "{43517A27-27ED-4BCA-97B0-B102559083BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheers.NLog.Extensions", "Cheers.NLog.Extensions\Cheers.NLog.Extensions.csproj", "{C0046CB5-6EB3-4F3A-8B3F-EA67A6F74FF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheers.AspNetCore", "Cheers.AspNetCore\Cheers.AspNetCore.csproj", "{D9B53D81-4245-420A-A6C8-38B0696FBF5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{43517A27-27ED-4BCA-97B0-B102559083BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43517A27-27ED-4BCA-97B0-B102559083BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43517A27-27ED-4BCA-97B0-B102559083BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0046CB5-6EB3-4F3A-8B3F-EA67A6F74FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0046CB5-6EB3-4F3A-8B3F-EA67A6F74FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0046CB5-6EB3-4F3A-8B3F-EA67A6F74FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0046CB5-6EB3-4F3A-8B3F-EA67A6F74FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B53D81-4245-420A-A6C8-38B0696FBF5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B53D81-4245-420A-A6C8-38B0696FBF5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B53D81-4245-420A-A6C8-38B0696FBF5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B53D81-4245-420A-A6C8-38B0696FBF5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

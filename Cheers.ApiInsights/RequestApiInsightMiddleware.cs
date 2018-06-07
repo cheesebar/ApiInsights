@@ -13,6 +13,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using System.Reflection;
 using Microsoft.AspNetCore.Http.Features;
+using Cheers.AspNetCore;
 
 namespace Cheers.ApiInsights
 {

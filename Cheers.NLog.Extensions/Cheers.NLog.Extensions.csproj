@@ -13,8 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="HttpContextProvider.cs" />
-    <Compile Remove="ServiceNLogLayout.cs" />
+    <Compile Remove="Layouts\StartLayout.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
@@ -28,7 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cheers.AspNetCore\Cheers.AspNetCore.csproj" />
-    <ProjectReference Include="..\Cheers.NLog.Extensions\Cheers.NLog.Extensions.csproj" />
   </ItemGroup>
 
 </Project>

@@ -25,6 +25,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cheers.ApiInsights\Cheers.ApiInsights.csproj" />
+    <ProjectReference Include="..\Cheers.AspNetCore\Cheers.AspNetCore.csproj" />
+    <ProjectReference Include="..\Cheers.NLog.Extensions\Cheers.NLog.Extensions.csproj" />
   </ItemGroup>
 
 </Project>

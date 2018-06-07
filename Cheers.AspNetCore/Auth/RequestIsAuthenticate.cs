@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using System.Security.Claims;
+using Cheers.AspNetCore;
+using Microsoft.AspNetCore.Authentication;
 
-namespace Cheers.ApiInsights
+namespace Cheers.AspNetCore.Auth
 {
     /// <summary>
     ///     验证请求用户是否已经认证
@@ -20,11 +20,14 @@ namespace Cheers.ApiInsights
         /// <returns></returns>
         Task<string> IsAuthenticateAsync();
         /// <summary>
-        ///     返回已经认证的 scheme
+        ///     返回已经认证的 用户名
         /// </summary>
         /// <returns></returns>
         Task<string> AuthenticatedUserName();
     }
+    /// <summary>
+    ///     在 <see cref="AuthenticationMiddleware"/> 进行权限控制下的一个 <see cref="IRequestIsAuthenticate"/> 实现
+    /// </summary>
     public class DefaultRequestIsAuthenticate : IRequestIsAuthenticate
     {
         private readonly List<AuthenticationScheme> _authenticationSchemes;

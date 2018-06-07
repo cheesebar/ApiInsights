@@ -17,7 +17,6 @@ namespace WebApp
         {
             BuildWebHost(args).Run();
         }
-
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseNLog()

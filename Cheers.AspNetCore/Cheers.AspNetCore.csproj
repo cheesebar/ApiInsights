@@ -13,7 +13,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="HttpContextProvider.cs" />
     <Compile Remove="ServiceNLogLayout.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -24,11 +23,6 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Cheers.AspNetCore\Cheers.AspNetCore.csproj" />
-    <ProjectReference Include="..\Cheers.NLog.Extensions\Cheers.NLog.Extensions.csproj" />
   </ItemGroup>
 
 </Project>

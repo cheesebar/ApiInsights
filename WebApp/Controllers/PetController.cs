@@ -8,7 +8,7 @@ using NLog;
 using WebApp.Models;
 using NLog.Fluent;
 using Microsoft.Extensions.Logging;
-using Cheers.ApiInsights;
+using NLog.Targets;
 
 namespace WebApp.Controllers
 {
@@ -24,25 +24,6 @@ namespace WebApp.Controllers
         [Route(""),HttpGet]
         public async Task<bool> Get()
         {
-            _logger.LogInformation("information");
-            _logger.LogTrace("trace");
-            _logger.LogDebug("debug");
-            _logger.LogCritical("critical");
-            _logger.LogWarning("warning");
-            _logger.LogError("error");
-
-            return true;
-        }
-    }
-
-
-    public class HomeController : Controller
-    {
-        [NoInsight]
-        public async Task<bool> Index()
-        {
-
-
             return true;
         }
     }
